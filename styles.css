@@ -1,0 +1,201 @@
+@font-face{
+	font-family: heroic;
+	src:url(fonts/heroic.ttf);
+}
+
+header{
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	display: inline-block;
+}
+
+body{
+	margin:0px;
+	background-color: black;
+}
+
+.mainHeader__logoContainer{
+	width: 70%;
+	float: left;
+}
+.mainHeader__logo{
+	background-color: black;
+	float: left;
+	margin-left: 16px;
+    padding: 8px 0;
+}
+
+.mainHeader__logo svg{
+	height: 25px;
+    max-width: 150px;
+}
+
+.mainHeader__userIconContainer{
+	width: 30%;
+	float: right;
+	position: relative;
+}
+
+.mainHeader__userIcon{
+	background-color: black;
+	height: 35px;
+	width: 48px;
+    line-height: 35px;
+	text-align: center;
+    vertical-align: middle;
+}
+
+.mainHeader__userIcon svg{
+	height: 16px;
+	width: 16px;
+    position: absolute;
+    top: 15px;
+    right:16px;
+}
+
+.mainHeader__navBar{
+	list-style-type: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #333333;
+}
+
+.mainHeader__navBarElements{
+	width: 25%;
+	float: left;
+}
+
+.mainHeader__navBar a{
+	float: left;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	font-family: heroic;
+	color: #ffffff;
+	font-size: 1.15em;
+	letter-spacing: 0.05em;
+	width: 100%;
+	border-right: 1px solid #333333;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+
+.mainHeader__linkArrow svg{
+	height: 7px;
+	width: 7px;
+	fill: #e5127d;
+}
+
+
+
+footer{
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+    color: #fff;
+    padding-top: 16px;
+    border-top: 1px solid #343434;
+}
+
+.footer__logo{
+	align-items: center;
+	padding: 8px 16px;
+}
+
+.footer__logo svg{
+	max-height: 120px;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__linksContainer{
+}
+
+.footer__links{
+	list-style: none;
+	font-size: .75em;
+	font-family: helvetica;
+	text-align: center;
+	padding: 0px;
+}
+
+.footer__links ul{
+	text-align: center;
+}
+
+.footer__links li{
+	display: inline-block;
+	padding-bottom: 6px;
+}
+
+.footer__links li:after{
+	content: "\2022";
+}
+
+.footer__links li:last-child:after{
+	content: none;
+}
+
+.footer__links a{
+	color: #e5127d;
+    vertical-align: baseline;
+    text-decoration: none;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.footer__status{
+	font-size: .75em;
+	font-family: helvetica;
+	padding-top: 0px;
+}
+
+.footer__bottom__status a{
+	text-decoration: none;
+	color: #e5127d;
+	text-align: center;
+}
+
+.footer__bottom__status-text{
+	margin: 4px;
+}
+
+.footer__voxLogo-text{
+	fill: #fff;
+}
+.footer__voxLogo{
+	width: 100%;
+    max-width: 150px;
+}
+
+.footer__section-vox{
+	font-size: .75em;
+    padding: 16px 16px;
+}
+
+.footer__copyright{
+	display: inline-block;
+	width: 100%;
+}
+.footer__copyright a{
+	text-decoration: none;
+	color: #e5127d;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.footer__corporateLink {
+	text-decoration: none;
+	color: #e5127d;
+	font-family: helvetica;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
