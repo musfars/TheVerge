@@ -199,3 +199,226 @@ footer{
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
+
+.articles-main__contents{
+	background: linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+	overflow: auto;	
+}
+
+.articles-main__contents__type1{
+	float:left;
+	margin:1px 0px;
+	background: black;
+	box-sizing: border-box;
+	width:100%;		
+}
+
+.articles-main__contents__type1__body{	
+	color:white;
+	font-size: 19px;
+	display:inline-block;
+	width:45%;
+	padding-left: 3px;
+}
+
+.articles-main__contents__body-author{
+	display: block;
+	color: #e5127d;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.articles-main__contents__type2{	
+	width: 100%;
+	display: inline-block;
+	background: black;
+    margin-bottom: 1px;    
+}
+
+.articles-main__contents__type2__body{
+	font-size: 14.4px;
+	color:white;
+	display: inline-block;
+	width:67%;
+	vertical-align: top;
+	padding-left: 3px;
+}
+
+.articles{
+	overflow: auto;
+	padding: 16px 0px;
+}
+.articles__content{
+	height: 69.8px;
+	width: 100%;
+	display: inline-block;
+	padding:8px 0px;
+
+	background: white;
+    margin-bottom: 1px;
+}
+.articles__contents_type1{
+	font-size: 14.4px;
+	color:#0A0909;
+	display: inline-block;
+	width:60%;
+	vertical-align: top;
+	padding:0px 8px;
+}
+.articles__contents_type1_body{
+	display: block;
+	color: #e5127d;
+	font-size: 12px;
+	text-decoration: none;
+	float: left;
+}
+.articles__contents_type1_body_bottom{
+	float:left;
+	color:#6a6a6a;
+	font-size: 12px;
+}
+.articles__after:after{
+	border-right: 1px solid currentColor;
+    content: "";
+    display: inline-block;
+    height: 1.1em;
+    margin: 0 .4em;
+    vertical-align: middle;
+	width: 2px;
+	color:black;
+}
+.articles__ad-box__left_title{
+	color:#424247;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 14.4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.articles__ad-box__left{
+	width:50%;
+	text-align: right;
+	float:left;
+}
+.articles__ad-box__right{
+	color:#e5127d;
+	width: 50%;
+	float: right;
+	font-family: heroic;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 0.64px;
+	font-style: italic;
+	text-align: left;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.articles__ad-box__right-content{
+	padding-left: 8px;
+	padding-top: 16px;
+}
+.articles__ad-box{
+	overflow: auto;
+	padding: 16px 0px;
+}
+
+.articles__ad-box-author{
+	display: block;
+	color: #e5127d;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.guidebook__container{
+	background-image: url("https://cdn.vox-cdn.com/thumbor/wXsPgU5AVPuLgx-I0hnNBtL1AvA=/133x0:667x534/1024x1024/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif");
+}
+
+.guidebook__top{
+	position: relative;
+    overflow: auto;
+    padding: 1.2rem 16px 2rem; 
+}
+
+.guidebook__top-left{
+	width: 50%;
+	float: left;
+}
+
+.guidebook__top-left img{
+	max-width: 250px;
+    max-height: 50px;
+}
+
+.guidebook__top-right{
+	width: 50%;
+    display: inline-block;
+    text-align: end;
+    margin-top:17px;
+}
+
+.guidebook__top-right a{
+	text-decoration: none;
+    color:#e5127d;
+    font-size: 16px;
+}
+
+.guidebook__top:after {
+	background: #e5127d;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 39px;
+	top: 71px;
+	left: 16px;
+	z-index: 1;
+}
+
+.guidebook__top:before {
+	background-color: #e5127d;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 40px;
+	bottom: 31px;
+	-webkit-transform: rotate(-120deg);
+	transform: rotate(-120deg);
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
+	width: 35px;
+	z-index: 1;
+}
+
+.guidebook__bottom{
+	padding-left: 16px;
+    padding-right: 16px;
+}
+
+.guidebook__bottom__article{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	background-color: white;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.guidebook__bottom__article-image{
+	width: 30%;
+	display: inline-block;
+    float: left;
+}
+
+.guidebook__bottom__article-content{
+	width: 70%;
+	display: inline-block;
+}
+
+.guidebook__bottom__article-content div{
+	padding-left: 16px;
+	position: absolute;
+	top: 50%;
+	font-family: sans-serif;
+    font-weight: bold;
+    color: #424242;
+    transform: translateY(-50%);
+}
