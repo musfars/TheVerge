@@ -5,7 +5,6 @@
 
 header{
 	background-color: black;
-	height: 100px;
 	width: 100%;
 	display: inline-block;
 }
@@ -18,7 +17,6 @@ header{
 
 body{
 	margin:0px;
-	background-color: black;
 }
 
 .mainHeader__logoContainer{
@@ -222,7 +220,7 @@ footer{
 
 .articles-main__contents__type1 img{
 	float: left;
-	margin-right: 2px;
+	margin-right: 4px;
 }
 
 .articles-main__contents__type1__body{	
@@ -256,7 +254,7 @@ footer{
 
 .articles-main__contents__type2 img{
 	float: left;
-	margin-right: 4px;
+	margin-right: 8px;
 }
 
 .articles-main__contents__type2__body{
@@ -277,12 +275,30 @@ footer{
 	display: inline-block;
 	padding:8px 0px;
 	background: white;
-    margin-bottom: 1px;
+    border-bottom: 1px solid #e7e7e8;
+}
+
+.articles__content:first-child{
+	width: 100%;
+	display: inline-block;
+	padding:8px 0px;
+	background: white;
+	border-bottom: 1px solid #e7e7e8;
+	border-top: 1px solid #e7e7e8;
+}
+
+.articles__content__image-container{
+	width: 30%;
+	float: left;
 }
 
 .articles__content img{
-	height: 85px;
-	width: 127.5px;
+	width: 100%;
+}
+
+.articles__content__text-container{
+	width: 70%;
+	float: left;
 }
 
 .articles__contents_type1{
@@ -291,7 +307,6 @@ footer{
 	font-weight: 600;
 	color:#0A0909;
 	display: inline-block;
-	width:60%;
 	vertical-align: top;
 	padding:0px 8px;
 }
@@ -454,6 +469,7 @@ footer{
 	position: absolute;
 	top: 50%;
 	font-family: sans-serif;
+	font-size: 14.4px;
     font-weight: bold;
     color: #424242;
     transform: translateY(-50%);
@@ -469,3 +485,44 @@ footer{
     letter-spacing: 0.09em;
     font-family: helvetica;
 }
+
+.navbar__dropdown{
+	height: 100%;
+}
+
+.navbar__dropdown-hide{
+	visibility: none;
+	display: none;
+}
+
+.navbar__dropdown-show {
+	display:inline;
+	visibility: visible;
+	background-color: black;
+	overflow: auto;
+	z-index: 1;
+}
+
+.navbar__dropdown a{
+	font-size: 9.6px;
+	color: white;
+	padding-left: 16px;
+	border-bottom: 1px solid #6a6a6a;
+	font-weight: bold;
+	line-height: 42px;
+	font-family: sans-serif;
+	display: block;
+	height: 41px;
+	background-color: #1a1a1a;
+    text-align: left;
+	text-decoration: none;
+}
+
+.navbar__dropdown a:nth-last-child(2){
+	color: #e5127d;
+}
+
+.navbar__dropdown a:last-child{
+	height: -webkit-fill-available;
+}
+

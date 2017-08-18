@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <link href="styles.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    <script>
+      function clickFunction(id){
+        if(document.getElementById(String(id)).classList.contains("navbar__dropdown-show")){
+          document.getElementById(String(id)).className="navbar__dropdown-hide";
+          document.body.style.position = "";
+        }
+        else{
+          document.getElementById("tech-dropdown").className="navbar__dropdown-hide";
+          document.getElementById("science-dropdown").className="navbar__dropdown-hide";
+          document.getElementById("culture-dropdown").className="navbar__dropdown-hide";
+          document.getElementById("more-dropdown").className="navbar__dropdown-hide";
+          document.getElementById(String(id)).className="navbar__dropdown-show";
+          document.getElementById(String(id)).classList.add("navbar__dropdown");
+          document.body.style.position = "fixed";
+        }
+      }
+
+    </script>  
   </head>
 
   <body>
@@ -19,35 +37,75 @@
   			</div>
   			<div class="mainHeader__navBar">
 				<div class="mainHeader__navBarElements">
-					<a href="#tech">TECH 
+					<a href="#tech" onclick="clickFunction('tech-dropdown');">TECH 
 						<span class="mainHeader__linkArrow">
 						<svg viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg>
 						</span>
 					</a>
 				</div>
 				<div class="mainHeader__navBarElements">
-					<a href="#science">SCIENCE
+					<a href="#science" onclick="clickFunction('science-dropdown');">SCIENCE
 						<span class="mainHeader__linkArrow">
 						<svg viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg>
 						</span>
 					</a>
 				</div>
 				<div class="mainHeader__navBarElements">
-					<a href="#culture">CULTURE
+					<a href="#culture" onclick="clickFunction('culture-dropdown');">CULTURE
 						<span class="mainHeader__linkArrow">
 						<svg viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg>
 						</span>
 					</a>
 				</div>
 				<div class="mainHeader__navBarElements">
-					<a href="#more">MORE
+					<a href="#more" onclick="clickFunction('more-dropdown');">MORE
 						<span class="mainHeader__linkArrow">
 						<svg viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg>
 						</span>
 					</a>
-				</div>
-			</div>
-  		</header>
+        </div>
+      </div>
+      <div class="navbar__dropdown navbar__dropdown-hide" id="tech-dropdown">
+        <a href="#">Apple</a>
+        <a href="#">Google</a>
+        <a href="#">Microsoft</a>
+        <a href="#">Apps</a>
+        <a href="#">Photography</a>
+        <a href="#">Virtual Reality</a>
+        <a href="#">Business</a>
+        <a href="#">Design</a>
+        <a href="#">ALL TECH</a>
+        <a href="#"></a>
+      </div>
+      <div class="navbar__dropdown navbar__dropdown-hide" id="science-dropdown">
+        <a href="#">Space</a>
+        <a href="#">Energy</a>
+        <a href="#">Health</a>
+        <a href="#">Environment</a>
+        <a href="#">ALL SCIENCE</a>
+        <a href="#"></a>
+      </div>
+      <div class="navbar__dropdown navbar__dropdown-hide" id="culture-dropdown">
+        <a href="#">Web</a>
+        <a href="#">TV</a>
+        <a href="#">Film</a>
+        <a href="#">Games</a>
+        <a href="#">Comics</a>
+        <a href="#">Music</a>
+        <a href="#">ALL CULTURE</a>
+        <a href="#"></a>
+      </div>
+      <div class="navbar__dropdown navbar__dropdown-hide" id="more-dropdown">
+        <a href="#">CARS</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">LONGFORM</a>
+        <a href="#">VIDEO</a>
+        <a href="#">CIRCUIT BREAKER</a>
+        <a href="#">FORUMS</a>
+        <a href="#">TL;DR</a>
+        <a href="#"></a>
+      </div>
+  	</header>
 
   	
     <div class = "articles-main__contents">
@@ -120,105 +178,11 @@
     </div>
       
     <div class="articles">
-      <div style="background-color:#6a6a6a;">
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+                    <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
         </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
-          <div class="articles__contents_type1">
-            Sonic mania review: go and find whatever u need!!!
-            <div class="articles__contents_type2">
-              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
-              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-              <div class="articles__contents_type1_body_bottom">2 comments</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__content">
-          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg" alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">		
+        <div class="articles__content__text-container">          
           <div class="articles__contents_type1">
             Sonic mania review: go and find whatever u need!!!
             <div class="articles__contents_type2">
@@ -229,7 +193,137 @@
           </div>
         </div>
       </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/kTF7MG_wYmJXmJXosoLEL0TsoT8=/300x0:3540x2160/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56232629/Crackdown_3_Screenshot_Action_Hero_Shot.0.jpg">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Microsoft's biggest Xbox One X launch title is delayed until 2018
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/8fAS61U1BR6S6DqPH-VEy3RFgH4=/0x0:1428x952/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56232611/v30.0.png">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            LG’s V30 looks a little bit awesome
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/l0Ph7RYkqTyr8VKp2vsWIvDy64s=/300x0:3540x2160/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56226961/UTLL_Launch_Screenshot_06.0.png">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Uncharted: The Lost Legacy review: who needs Nathan Drake?
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/5z6WMM8hi1-2TONi0Iv7xqKdFVU=/0x0:2040x1360/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56227997/cook-encryption.0.0.jpg">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Apple Pay is dropping support for websites that sell white supremacist merchandise
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/aEjWMEEIFNfL3HViPYnn7UwcY8k=/0x0:1023x682/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56227561/Screen_Shot_2017_08_16_at_5.53.42_PM.0.png">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Squarespace says it’s removing ‘a group of sites’ as internet cracks down on hate speech
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/P65PDj_loEjYKIiFkfdJb2URVlo=/0x0:2040x1360/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56227061/nstatt_170418_1624_0052.0.0.jpg">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Mark Zuckerberg says Facebook will keep working to combat neo-Nazis on its platform
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/MfLiJVUhKmVeicJDzrir8ZwrREQ=/53x0:628x383/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56226947/7152f6e3269902efb058fbf6c7b11367_original.0.jpg">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            This Kickstarter wants to put IMAX on your face
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles__content">
+        <div class="articles__content__image-container">
+          <img width="96px"class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/mdTw93Meq3i_Swe8z62JtkmcIo4=/0x0:2040x1360/300x200/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56225801/akrales_170602_1743_0038.0.jpg">		
+        </div>
+        <div class="articles__content__text-container">
+          <div class="articles__contents_type1">
+            Spotify pulls several ‘hate bands’ from its service
+            <div class="articles__contents_type2">
+              <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"><font color="#6a6a6a"> by </font>Andrews</a>
+              <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+              <div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div> 
+
+
     <div class="articles__ad-box">
       <div class="articles__ad-box__left">
         <h2 class="articles__ad-box__left_title">
