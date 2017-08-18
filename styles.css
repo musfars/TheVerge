@@ -526,3 +526,134 @@ footer{
 	height: -webkit-fill-available;
 }
 
+@media(min-width:600px){
+	.articles-main__contents__type2{
+		margin-bottom: 2px;
+		padding: 0px;
+		margin-right: 0px;
+		width: 49.6%;
+		float: left;
+	}
+	.articles{
+		padding: 16px 16px;
+	}
+	.articles__contents_type1,.articles__ad-box__left_title,.articles__ad-box-author{
+		font-size: 17px;
+	} 
+	.articles__ad-box__right{
+		font-size: 34px;
+	}
+	.articles__ad-box{
+		padding: 16px 16px;
+	}
+	.articles__ad-box__right-content{
+		padding-left: 16px;
+	}
+	.guidebook__container{
+		margin: 0 16px;
+	}
+	.guidebook__bottom__article{
+		width: 48.7%;
+		margin-bottom: 12px;
+	}
+	.guidebook__bottom__article:nth-child(2){
+		float: right;
+	}
+	.guidebook__bottom__article:nth-child(4){
+		float: right;
+	}
+	.guidebook__bottom__article-image{
+		height: 103px;
+	}
+	.guidebook__bottom__article-image img{
+		height: 100%;
+	}
+	.guidebook__bottom__article-content div{
+		font-size: 15.3px;
+	}
+	footer{
+		height: 200px;
+	}
+	.footer__logo{
+		width: 200px;
+		float: left;
+		display: inline-block;
+		padding: 74px 16px;
+	}
+	.footer__logo svg{
+		max-width: 168px;
+	}
+	.footer__linksContainer{
+		width: 245px;
+		float: left;
+		display: inline-block;
+	}
+	.footer__section-vox{
+		width: 275px;
+		display: inline-block;
+		padding: 48px 0px;
+		text-align: right;
+		margin-left: -16px;
+	}
+	.footer__links{
+		text-align: left;
+	}
+	.footer__status{
+		padding-left: 8px;
+		text-align: left;
+	}
+	.footer__bottom__status-text {
+		margin: 0px;
+		margin-bottom: 2px;
+	}
+	.footer__copyright{
+		text-align: right;
+	}
+	.footer__corporateLink{
+		text-align: right;
+	}
+	.footer__voxLogo{
+		max-width: 220px;
+	}
+	.articles-main__contents__type2 img{
+		float: none;
+		width: 100%;
+	}
+	.articles-main__contents__type1{
+		padding: 0px;
+	}
+	.articles-main__contents__type1 img{
+		height: 302px;
+		width: 382px;
+	} 
+	.articles-main__contents__type1__body {
+		color: white;
+		font-size: 38.5px;
+		font-family: heroic;
+		letter-spacing: 0.496px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+		width: 45%;
+		padding: 32px;
+		box-sizing: border-box;
+	}
+	.articles-main__contents{
+		background: linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+		overflow: hidden;
+		display: inline-block;	
+	}
+	.articles-main__contents__type2__body {
+		font-size: 20.4px;
+		font-family: adellesans;
+		font-weight: bold;
+		color: white;
+		box-sizing: border-box;
+		padding: 16px;
+	}
+	.articles-main__contents__body-author{
+		font-size: 17px;
+		text-transform: uppercase;
+		padding-top: 8px;
+	}
+}
