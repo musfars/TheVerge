@@ -592,7 +592,7 @@ footer{
 		height: 200px;
 	}
 	.footer__logo{
-		width: 200px;
+		width: 30%;
 		float: left;
 		display: inline-block;
 		padding: 74px 16px;
@@ -601,12 +601,12 @@ footer{
 		max-width: 168px;
 	}
 	.footer__linksContainer{
-		width: 245px;
+		width: 30%;
 		float: left;
 		display: inline-block;
 	}
 	.footer__section-vox{
-		width: 275px;
+		width: 30%;
 		display: inline-block;
 		padding: 48px 0px;
 		text-align: right;
@@ -716,9 +716,9 @@ footer{
 		width: 12%;
 	}
 
-	 /* .articles-main__contents__type1:after{
+	  .articles-main__contents__type1:after{
 		background-color: #f7c626;
-		bottom: -102px;
+		top: 679px;
 		content: "";
 		height: 3px;
 		left: 65px;
@@ -732,14 +732,14 @@ footer{
 	}
 	.articles-main__contents__type2:before{
 		background-color: #f7c626;
-		bottom: -71px;
+		top: 648px;
 		content: "";
 		height: 3px;
 		left: 122px;
 		position: absolute;
 		width: 40%;
 		z-index: 4;
-	}  */
+	}  
 
 	.articles__ad-box-tablet{
 		display: block;
