@@ -221,6 +221,7 @@ footer{
 .articles-main__contents__type1 img{
 	float: left;
 	margin-right: 4px;
+	width: 50%;
 }
 
 .articles-main__contents__type1__body{	
@@ -365,6 +366,10 @@ footer{
 .articles__ad-box{
 	overflow: auto;
 	padding: 16px 0px;
+}
+
+.articles__ad-box-tablet{
+	display: none;
 }
 
 .articles__ad-box-author{
@@ -526,6 +531,10 @@ footer{
 	height: -webkit-fill-available;
 }
 
+.mainHeader__date{
+	display: none;
+}
+
 @media(min-width:600px){
 	.articles-main__contents__type2{
 		margin-bottom: 2px;
@@ -618,23 +627,25 @@ footer{
 	.articles-main__contents__type2 img{
 		float: none;
 		width: 100%;
+		margin-right: unset;	
 	}
 	.articles-main__contents__type1{
 		padding: 0px;
 	}
 	.articles-main__contents__type1 img{
-		height: 302px;
-		width: 382px;
+		height: 360px;
+		width: 50%;
+		margin-right: unset;
 	} 
 	.articles-main__contents__type1__body {
 		color: white;
-		font-size: 38.5px;
+		font-size: 46px;
 		font-family: heroic;
 		letter-spacing: 0.496px;
 		font-weight: bold;
 		text-transform: uppercase;
 		display: inline-block;
-		width: 45%;
+		width: 50%;
 		padding: 32px;
 		box-sizing: border-box;
 	}
@@ -655,5 +666,125 @@ footer{
 		font-size: 17px;
 		text-transform: uppercase;
 		padding-top: 8px;
+		font-family: heroic;
+    	font-weight: bold;
+	}
+	.mainHeader__logo svg{
+		height: 120px;
+		width: 100%;
+		max-width: 700px;
+	}
+	.mainHeader__logoContainer{
+		width: -webkit-fill-available;
+		padding: 64px 16px;
+		background:url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7383215/Masthead_DB_1.0.png");
+	}
+	.mainHeader__logo{
+		background-color: unset;
+		width: 100%;
+		padding: 8px 0px;
+		margin-left: unset;
+		text-align: center;
+	}
+	.mainHeader__userIconContainer{
+		float:unset;
+		top: 265px;
+		right: 0px; 
+		position: absolute;
+	}
+	.mainHeader__userIcon{
+		background-color: unset;
+	}
+	.mainHeader__navBar{
+		border-top: 1px solid #333333;
+	}
+	.mainHeader__navBar a{
+		border-right: unset;
+		font-size: 19.55px;
+	}
+	.mainHeader__navBarElements{
+		width: 80px;
+	}
+	.articles-main__contents__type1:after{
+		background-color: #f7c626;
+		bottom: -102px;
+		content: "";
+		height: 3px;
+		left: 65px;
+		position: absolute;
+		-webkit-transform: rotate(120deg);
+		transform: rotate(120deg);
+		-webkit-transform-origin: bottom right;
+		transform-origin: bottom right;
+		width: 38px;
+		z-index: 4;
+	}
+	.articles-main__contents__type2:before{
+		background-color: #f7c626;
+		bottom: -71px;
+		content: "";
+		height: 3px;
+		left: 122px;
+		position: absolute;
+		width: 40%;
+		z-index: 4;
+	}
+	.articles__ad-box-tablet{
+		display: block;
+		background: linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+		height: 250px;
+		padding: 32px;
+		box-sizing: border-box;
+		clear: both;
+		border-bottom: 16px solid black;
+	}
+	.articles__ad-box-tablet__right{
+		font-size: 34px;
+	}
+	.articles__ad-box-tablet__right-content{
+		padding-left: 16px;
+	}	
+	.articles__ad-box-tablet__left_title{
+		font-size: 25.5px;
+		font-family: adellesans;	
+	}
+	.articles__ad-box-tablet-author{
+		font-size: 21.25px;
+		font-family: heroic;
+	} 
+	.articles__ad-box-tablet__left{
+		width:50%;
+		text-align: right;
+		float:left;
+	}
+	.articles__ad-box-tablet__right{
+		color:#e5127d;
+		width: 50%;
+		float: right;
+		font-family: heroic;
+		font-size: 2em;
+		font-weight: bold;
+		letter-spacing: 0.64px;
+		font-style: italic;
+		text-align: left;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	.articles__ad-box-tablet__right-content{
+		padding-left: 32px;
+		padding-top: 16px;
+		color: black;
+    	font-size: 51px;
+	}
+	.mainHeader__date{
+		color: white;
+		position: absolute;
+		top: 210px;
+		right: 35%;
+		font-size: 19.55px;
+		font-family: heroic;
+		display: inline-block;
 	}
 }
+
+
