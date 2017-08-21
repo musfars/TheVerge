@@ -535,6 +535,14 @@ footer{
 	display: none;
 }
 
+.hide{
+	display: none;
+}
+
+.icon-search{
+	display: none;
+}
+
 @media(min-width:600px){
 	.articles-main__contents__type2{
 		margin-bottom: 2px;
@@ -688,9 +696,10 @@ footer{
 	}
 	.mainHeader__userIconContainer{
 		float:unset;
-		top: 265px;
-		right: 0px; 
+		top: 270px;
+		right: 46px; 
 		position: absolute;
+		width: unset;
 	}
 	.mainHeader__userIcon{
 		background-color: unset;
@@ -701,11 +710,13 @@ footer{
 	.mainHeader__navBar a{
 		border-right: unset;
 		font-size: 19.55px;
+		padding: 12px 0px;
 	}
 	.mainHeader__navBarElements{
-		width: 80px;
+		width: 12%;
 	}
-	.articles-main__contents__type1:after{
+
+	 /* .articles-main__contents__type1:after{
 		background-color: #f7c626;
 		bottom: -102px;
 		content: "";
@@ -728,7 +739,8 @@ footer{
 		position: absolute;
 		width: 40%;
 		z-index: 4;
-	}
+	}  */
+
 	.articles__ad-box-tablet{
 		display: block;
 		background: linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
@@ -783,6 +795,18 @@ footer{
 		right: 35%;
 		font-size: 19.55px;
 		font-family: heroic;
+		display: inline-block;
+	}
+	.hide{
+		display: inline-block;
+	}
+	.icon-search {
+		height: 16px;
+		width: 16px;
+		fill: #fff;
+		position: absolute;
+		top: 285px;
+		right: 16px;
 		display: inline-block;
 	}
 }
