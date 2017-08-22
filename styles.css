@@ -17,6 +17,7 @@ header{
 
 body{
 	margin:0px;
+	background: black;
 }
 
 .mainHeader__logoContainer{
@@ -247,7 +248,7 @@ footer{
 	padding: 8px;
     display: inline-block;
     background: black;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     margin-left: 2px;
     margin-right: 2px;
     width: -webkit-fill-available;   
@@ -647,6 +648,7 @@ footer{
 	}
 	.articles-main__contents__type1{
 		padding: 0px;
+		position: relative;
 	}
 	.articles-main__contents__type1 img{
 		height: 360px;
@@ -702,6 +704,7 @@ footer{
 		padding: 8px 0px;
 		margin-left: unset;
 		text-align: center;
+		position: relative;
 	}
 	.mainHeader__userIconContainer{
 		float:unset;
@@ -727,7 +730,7 @@ footer{
 
 	  .articles-main__contents__type1:after{
 		background-color: #f7c626;
-		top: 679px;
+		top: 357px;
 		content: "";
 		height: 3px;
 		left: 65px;
@@ -739,15 +742,14 @@ footer{
 		width: 38px;
 		z-index: 4;
 	}
-	.articles-main__contents__type2:before{
+	.tablet:before{
 		background-color: #f7c626;
-		top: 648px;
+		top: -35px;
 		content: "";
 		height: 3px;
 		left: 122px;
 		position: absolute;
-		width: 40%;
-		z-index: 4;
+		width: 100%;
 	}  
 
 	.articles__ad-box-tablet{
@@ -800,7 +802,8 @@ footer{
 	.mainHeader__date{
 		color: white;
 		position: absolute;
-		top: 210px;
+		top: 100%;
+		left: 0;
 		width: 100%;
 		text-align: center;
 		font-size: 19.55px;
@@ -824,6 +827,9 @@ footer{
 	}
 	.circuit__breaker{
 		display: none;
+	}
+	.tablet{
+		position: relative;
 	}
 }
 
@@ -978,8 +984,18 @@ footer{
 		z-index: 1;
 	}
 	.desktop{
-		height: unset;
+		height: 108px;
+	}
+	.mainHeader__navBar{
+		display: block;
+		margin: 0 auto;
+		max-width: 1300px;
 	}	
+}
+.body-container{
+	max-width: 1300px;
+	margin: 0 auto;
+	background: white;
 }
 
 
