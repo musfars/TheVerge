@@ -216,7 +216,7 @@ footer{
     background: black;
     box-sizing: border-box;
     padding: 8px;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 .articles-main__contents__type1 img{
@@ -250,8 +250,9 @@ footer{
     background: black;
     margin-bottom: 2px;
     margin-left: 2px;
+    box-sizing: border-box;
     margin-right: 2px;
-    width: -webkit-fill-available;   
+    width: 100%;   
 }
 
 .articles-main__contents__type2 img{
@@ -694,7 +695,8 @@ footer{
 		max-width: 700px;
 	}
 	.mainHeader__logoContainer{
-		width: -webkit-fill-available;
+		width: 100%;
+		box-sizing:border-box;
 		padding: 64px 16px;
 		background:url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7383215/Masthead_DB_1.0.png");
 	}
